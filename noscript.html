@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="refresh" content="5">
+	<title>Document</title>
+	<style>
+		p{
+			font-size: 1.5em;
+			margin: 2em;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<script>
+		let parent = document.getElementsByTagName("head");
+		parent[0].children[1].setAttribute('content', "0; URL=index.html");
+	</script>
+	<p>У вас отключен <strong>JavaScript</strong>. Включите его для перехода на сайт!</p>
+</body>
+</html>
