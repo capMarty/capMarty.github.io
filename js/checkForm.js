@@ -12,8 +12,3 @@ for (let i = 0; i < array.length; i++){
 		totalarr.push(array[i][j]);
 	}
 }
-for (let i = 0; i < totalarr.length; i++){
-	totalarr[i].onfocus = function () {
-		
-	}
-}
