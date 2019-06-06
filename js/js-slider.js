@@ -18,6 +18,6 @@ function moveRight() {
 	indexMove += 305;
 	slider.style.left = `${indexMove}px`;
 }
-// setInterval(function () {
-// 	moveLeft()
-// }, 7000);
+setInterval(function () {
+	moveLeft()
+}, 7000);
