@@ -4,7 +4,9 @@ html, body {
   font-size: 100%; }
 
 .wrapper {
-  display:none; }
+  overflow: hidden;
+  height: 100vh;
+  min-width: 100vw; }
 
 li {
   list-style: none; }
@@ -43,7 +45,7 @@ header {
       header nav li a {
         color: #fff;
         font-size: 1em;
-        font-weight: bold;}
+        font-weight: bold; }
         header nav li a:hover {
           color: #e8ba1e; }
   header span {
@@ -61,11 +63,10 @@ header {
     text-align: center;
     margin: .1em auto 0; }
 
-.btn {
+.btn, .disabled {
   display: block;
   width: 240px;
   border-radius: 3px;
-  background-color: #fed136;
   color: #fff;
   text-align: center;
   margin: 2em auto 6em;
@@ -73,8 +74,14 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   padding: 1em 0; }
+
+.btn {
+  background-color: #fed136; }
   .btn:hover {
     background-color: #e5bf3b; }
+
+.disabled {
+  background-color: grey; }
 
 #services {
   background-color: #fff; }
