@@ -18,13 +18,13 @@ function activeBtnSubmit () {
 		let iter = arrayElem[i].className
 		if (iter === "focusInputError" || iter === ""){
 			btnSubmit.setAttribute("disabled", "");
-			removeAdd(btnSubmit, "btn", "disabled");
+			btnSubmit.classList.remove("btnActive");
 			break;
 		}
 		else{
 			if(i === arrayElem.length - 1){
 				btnSubmit.removeAttribute("disabled");
-				removeAdd(btnSubmit, "disabled", "btn");
+				btnSubmit.classList.add("btnActive");
 			}	
 		}
 	}
