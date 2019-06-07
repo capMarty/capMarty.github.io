@@ -8,7 +8,6 @@ window.onload = function () {
 	function prelNone () {
 		let prel = document.querySelector("#wrap-preloader");
 		let block = document.querySelector(".wrapper");
-		// console.log(block)
 		prel.style.display = "none";
 		block.classList.remove("wrapper");
 	}
