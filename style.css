@@ -1,0 +1,103 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+.background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: center/cover no-repeat; /* Замените 'assets/bcg_office2.jpg' на свой путь к изображению */
+}
+
+
+.top-button-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%; /* изменен размер на 60% ширины экрана */
+  text-align: center;
+  z-index: 10;
+}
+
+.top-back-button,
+.top-next-button {
+  display: inline-block;
+  padding: 15px;
+  font-size: 16px;
+  background-color: rgba(39, 11, 11, 0.8);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dialog-box {
+  position: absolute;
+  bottom: 20%; /* начальная позиция за пределами экрана */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  padding: 20px;
+  background: rgba(39, 11, 11, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  transition: bottom 1s ease-in-out, opacity 0.5s ease-in-out; /* Плавное появление */
+  overflow: hidden;
+  z-index: 10;
+  color: azure;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  border: solid;
+  text-align: center;
+}
+
+.ellipsis-button {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  display: none;
+  background-color: #e9eee9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  color: #0e0e0e;
+}
+
+.character {
+  position: absolute;
+  bottom: 0;
+  height: 80vh; /* изменен размер на 70% высоты экрана */
+  transition: left 1s ease-in-out; /* Плавное появление */
+}
+
+#character-left {
+  left: 0; /* начальная позиция за пределами экрана слева */
+  width: 50vw; /* изменен размер на 50% ширины экрана */
+  background: center/cover no-repeat; /* Замените 'assets/s1.png' на свой путь к изображению персонажа */
+}
+
+#character-right {
+  right: 0; /* начальная позиция за пределами экрана справа */
+  width: 50vw; /* изменен размер на 50% ширины экрана */
+  background: center/cover no-repeat; /* Замените 'assets/s1.png' на свой путь к изображению персонажа */
+}
+
+.name_span{
+  color: #fb3295;
+}
+
+audio {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  top: 90%;
+}
